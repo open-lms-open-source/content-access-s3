@@ -1,0 +1,32 @@
+#
+# moodle-backup-filler sample configuration file
+#
+
+# Set debug to true to enable additional output.
+# Command line: --debug
+debug = false
+
+# To fill a single file, provide the source and destination filenames.
+# Command line: --source, --dest
+#source_backup_file = "in.mbz"
+#destination_backup_file = "out.mbz"
+
+# To fill multiple files, provide the source and destination directories.
+# If source file is relative and source directory is provided, the file is
+# relative to the directory.  Same goes for the destination file and
+# destination directory.
+# Command line: --sourcedir, --destdir
+source_backup_directory = "in"
+destination_backup_directory = "out"
+
+# Where to get files to inject into Moodle course backup.  Should be one of
+# the following:
+#  - "s3://bucketname"              (s3 bucket)
+#  - "http://hostname/path/prefix"  (http server)
+#  - "/absolute/path/prefix"        (local file)
+# Command line: --contentbase
+content_base = "s3://example-bucket-name"
+
+# Additional configuration used when content base is an s3 bucket.
+s3_region = "ap-southeast-2"
+s3_assume_role_arn = "arn:aws:iam::123456789012:role/ExampleReadOnly"
