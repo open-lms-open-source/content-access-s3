@@ -28,9 +28,9 @@ and `X`s represent required information as detailed above):
 $ aws configure set aws_access_key_id XXXXXXXXXXXXXXXXXXXX --profile moodle
 $ aws configure set aws_secret_access_key XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX --profile moodle
 $ aws configure set region ap-southeast-2 --profile moodle
-$ aws configure set role_arn arn:aws:iam::XXXXXXXXXXXX:role/XXXXXXXXXXX
+$ aws configure set role_arn arn:aws:iam::XXXXXXXXXXXX:role/XXXXXXXXXXX --profile moodle
 $ aws configure set source_profile moodle --profile moodle
-$ aws configure set mfa_serial arn:aws:iam::XXXXXXXXXXXX:mfa/XXXXXXXX
+$ aws configure set mfa_serial arn:aws:iam::XXXXXXXXXXXX:mfa/XXXXXXXX --profile moodle
 ```
 
 The final command shown above is optional and should only be executed if
