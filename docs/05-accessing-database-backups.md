@@ -11,10 +11,9 @@ is at least:
 * one backup per day is available for two months
 * one backup per month is available for seven years
 
-The name of your Moodle's S3 bucket is provided by the Blackboard Open LMS
-Enterprise team with the confirmation that your access has been provisioned.
-You'll need to substitute that in place of `example-s3-bucket` in the
-examples shown below.
+The name of your Moodle's S3 bucket is provided by the Open LMS Enterprise team
+with the confirmation that your access has been provisioned.  You'll need to
+substitute that in place of `example-s3-bucket` in the examples shown below.
 
 To obtain a list of database backups available in your Moodle's S3 bucket:
 

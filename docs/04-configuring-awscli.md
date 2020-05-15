@@ -14,8 +14,8 @@ require the following:
   authentication; this can be found in the AWS IAM Console on the same page
   that access key IDs are managed
 * the ARN string for the role you'll use to access your Moodle's S3 bucket;
-  this is provided to you by the Blackboard Open LMS Enterprise team with
-  the confirmation that your access has been provisioned
+  this is provided to you by the Open LMS Enterprise team with the confirmation
+  that your access has been provisioned
 * the AWS CLI tool must be installed on the computer that will be
   downloading files from the S3 bucket; documentation can be found
   [here](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)

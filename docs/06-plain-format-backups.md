@@ -1,9 +1,9 @@
 # Plain Format Database Backups
 
-The format originally used for Blackboard Open LMS Enterprise database
-backups was a gzip compressed text file containing SQL statements to
-recreate the database and its contents.  These are referred to as "plain
-format" backups and have filenames ending in `.sql.gz`.
+The format originally used for Open LMS Enterprise database backups was a gzip
+compressed text file containing SQL statements to recreate the database and its
+contents.  These are referred to as "plain format" backups and have filenames
+ending in `.sql.gz`.
 
 The full filename of a plain format database backup has the following parts,
 separated by hyphens:

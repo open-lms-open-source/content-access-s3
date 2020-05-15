@@ -1,13 +1,13 @@
-# About the Blackboard Open LMS Enterprise S3 Content Access Service
+# About the Open LMS Enterprise S3 Content Access Service
 
-The S3 Content Access Service provides Blackboard Open LMS Enterprise
-customers with secure access to their Moodle instances' database backups by
-downloading them directly from the AWS S3 bucket in which they're stored.
-In the near future it will also provide access to the Moodle file store.
+The S3 Content Access Service provides Open LMS Enterprise customers with
+secure access to their Moodle instances' database backups, various log files,
+and Moodle file store by downloading them directly from the AWS S3 bucket in
+which they're stored.
 
 This service is intended to replace existing methods of access to database
 backups and Moodle content.  They will, however, run in parallel until
-Blackboard Open LMS Enterprise instances are migrated to AWS.
+Open LMS Enterprise instances are migrated to AWS.
 
 ### Features
 
@@ -18,5 +18,7 @@ Blackboard Open LMS Enterprise instances are migrated to AWS.
 * Option to integrate with other AWS services to take action when new files
   are available
 * New database backups available daily, usually by 8am (Australian central time)
+* Log files available within 1 - 2 days
+* Content from the Moodle file store available in real time
 
 Next: [Prerequisites](01-prerequisites.md)

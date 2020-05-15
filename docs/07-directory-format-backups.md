@@ -1,11 +1,11 @@
 # Directory Format Database Backups
 
-Blackboard Open LMS Enterprise databases have grown significantly over the
-years and the amount of time required to restore a plain format backup has
-become problematic.  The Blackboard Open LMS Enterprise team regularly
-restores production backups to the staging environment, and several clients
-download their database backups and restore them every day.  Both of these
-can benefit from faster restore times than plain format backups can provide.
+Open LMS Enterprise databases have grown significantly over the years and the
+amount of time required to restore a plain format backup has become
+problematic.  The Open LMS Enterprise team regularly restores production
+backups to the staging environment, and several clients download their database
+backups and restore them every day.  Both of these can benefit from faster
+restore times than plain format backups can provide.
 
 To address this, "directory format" backups were introduced.  These are a
 directory containing one file for each table and blob in the database plus a
@@ -61,4 +61,4 @@ restores from plain format backups:
 * restore only specific tables with `-t `_table_ to save time restoring
   tables that aren't required
 
-Next: [Access to Moodle Content](08-accessing-moodle-content.md)
+Next: [Access to Log Files](08-accessing-logs.md)

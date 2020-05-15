@@ -43,4 +43,4 @@ $ aws --profile moodle s3 sync s3://example-s3-bucket/ . --exclude 'db-backups/*
 
 Note that this includes files that have been deleted from Moodle.
 
-Next: [Fileless Course Backups](09-fileless-course-backups.md)
+Next: [Fileless Course Backups](10-fileless-course-backups.md)
