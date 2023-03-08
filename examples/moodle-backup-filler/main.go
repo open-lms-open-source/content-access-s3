@@ -1,8 +1,7 @@
 // moodle-backup-filler
 //
 // Populate fileless course backups for archiving or import to a Moodle
-// instance that doesn't have access to the Blackboard Open LMS Enterprise
-// file store.
+// instance that doesn't have access to the Open LMS Enterprise file store.
 package main
 
 import (

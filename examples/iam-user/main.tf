@@ -1,5 +1,5 @@
 #
-# IAM user for Blackboard Open LMS Enterprise S3 Content Access
+# IAM user for Open LMS Enterprise S3 Content Access
 #
 
 provider "aws" {
@@ -27,16 +27,16 @@ resource "aws_iam_policy" "content-access" {
 
 data "aws_iam_policy_document" "content-access" {
   statement {
-    sid = "BlackboardOpenLMSEnterpriseReadOnlyAccess"
+    sid = "OpenLMSEnterpriseReadOnlyAccess"
 
     actions = [
       "sts:AssumeRole",
     ]
 
     resources = [
-      # the full resource ARN to use here will be provided by the Blackboard
-      # Open LMS Enterprise team with the confirmation that your access has
-      # been provisioned
+      # the full resource ARN to use here will be provided by the Open LMS
+      # Enterprise team with the confirmation that your access has been
+      # provisioned
       "arn:aws:iam::XXXXXXXXXXXX:role/XXXReadOnly",
     ]
   }

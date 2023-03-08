@@ -1,15 +1,14 @@
 # Contributing
 
 The documentation and examples in this repository are primarily intended for
-Blackboard to provide information to Blackboard Open LMS Enterprise clients.
-However, we'll gratefully accept any pull requests that are considered
-generally useful for those clients.
+Open LMS to provide information to Open LMS Enterprise clients.  However, we'll
+gratefully accept any pull requests that are considered generally useful for
+those clients.
 
 ## Issues
 
-Blackboard Open LMS Enterprise clients should submit support requests
-through Behind the Blackboard rather than submitting issues against this
-repository.
+Open LMS Enterprise clients should submit support requests through Zendesk
+rather than submitting issues against this repository.
 
 ## Opening a Pull Request
 

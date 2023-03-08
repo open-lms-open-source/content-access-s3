@@ -1,9 +1,9 @@
 # moodle-backup-filler
 
 This directory contains source code for `moodle-backup-filler`, which can be
-used to convert Blackboard Open LMS Enterprise "fileless" backups to
-standard Moodle course backups that can be restored into Moodle outside of
-the Blackboard Open LMS Enterprise environment.
+used to convert Open LMS Enterprise "fileless" backups to standard Moodle
+course backups that can be restored into Moodle outside of the Open LMS
+Enterprise environment.
 
 ## Fileless Backups
 
@@ -13,12 +13,12 @@ Standard Moodle course backups are made up of three parts:
 * data exported from the Moodle database (XML files)
 * files referenced by the course (the "files/" directory within the backup)
 
-All files stored by Moodle are immutable since the filenames are a checksum
-of the content.  Blackboard Open LMS Enterprise exploits this immutability
-by omitting files from the course backup.  Instead, files are kept in
-Moodle's file store (even after being deleted from Moodle).  When a course
-is restored from a fileless backup, the files are still in the file store
-and are simply associated with the restored course.
+All files stored by Moodle are immutable since the filenames are a checksum of
+the content.  Open LMS Enterprise exploits this immutability by omitting files
+from the course backup.  Instead, files are kept in Moodle's file store (even
+after being deleted from Moodle).  When a course is restored from a fileless
+backup, the files are still in the file store and are simply associated with
+the restored course.
 
 This approach reduces disk capacity compared with standard Moodle course
 backups by deduplicating files across multiple backups, while also providing
@@ -68,10 +68,10 @@ moodle-backup-filler
 
 ### Using moodle-backup-filler
 
-You'll require one or more Blackboard Open LMS Enterprise fileless backups
-on local disk, and access to the files referenced by them (either by having
-them on local disk, or by having access to the Blackboard Open LMS
-Enterprise S3 bucket that contains them or a copy of it).
+You'll require one or more Open LMS Enterprise fileless backups on local disk,
+and access to the files referenced by them (either by having them on local
+disk, or by having access to the Open LMS Enterprise S3 bucket that contains
+them or a copy of it).
 
 To convert a single fileless backup in the file `in.mbz` using files on
 local disk stored in a directory called `files` and writing the resulting
